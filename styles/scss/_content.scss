@@ -1,0 +1,76 @@
+.choose-block-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 0;
+
+	&:first-child {
+		.choose-block-item {
+			width: 17%;
+		}
+	}
+
+	&:nth-child(2) {
+		.choose-block-item {
+			width: 30%;
+		}
+	}
+
+	&:nth-child(3) {
+		.choose-block-item {
+			width: 14%;
+		}
+	}
+}
+
+.choose-block-item {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	position: relative; //to hide "Place here" text
+	font-size: 14px;
+	background-color: #5B7534;
+	box-shadow: 3px 3px 6px rgba(0,0,0,.6);
+	transition: 0.3s;
+	z-index: 1; //to hide "Place here" text
+
+	&:hover {
+		background-color: #3A412F;
+		transition: 0.4s;
+	}	
+
+	@media screen and (max-width: 768px) {
+		height: 28px;
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 480px) {
+		height: 23px;
+	}
+}
+
+.place-here {
+	display: flex;
+	justify-content: space-between;
+}
+
+.place-here-item {
+	width: 25%;
+	height: 42px;
+	margin: 10px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 34px;
+	border: 1px solid #3A412F;
+
+	@media screen and (max-width: 768px) {
+		height: 30px;
+		line-height: 28px;
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 480px) {
+		height: 25px;
+		line-height: 22px;
+	}
+}

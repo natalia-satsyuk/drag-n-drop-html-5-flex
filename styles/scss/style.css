@@ -1,0 +1,101 @@
+header {
+  padding: 20px 0;
+  background-color: #B1C2A3; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+p {
+  font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 12px; } }
+
+h1 {
+  padding-bottom: 5px;
+  font-size: 24px; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 20px; } }
+
+.content {
+  flex-grow: 1; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto; }
+
+.choose-block-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0; }
+  .choose-block-list:first-child .choose-block-item {
+    width: 17%; }
+  .choose-block-list:nth-child(2) .choose-block-item {
+    width: 30%; }
+  .choose-block-list:nth-child(3) .choose-block-item {
+    width: 14%; }
+
+.choose-block-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  margin-top: -28px;
+  font-size: 14px;
+  background-color: #5B7534;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  z-index: 1; }
+  .choose-block-item:hover {
+    background-color: #3A412F;
+    transition: 0.4s; }
+  @media screen and (max-width: 768px) {
+    .choose-block-item {
+      height: 28px;
+      margin-top: -19px;
+      font-size: 12px; } }
+  @media screen and (max-width: 480px) {
+    .choose-block-item {
+      height: 23px;
+      margin-top: -17px; } }
+
+.place-here {
+  display: flex;
+  justify-content: space-between; }
+
+.place-here-item {
+  width: 25%;
+  height: 42px;
+  margin: 10px;
+  padding-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #3A412F; }
+  @media screen and (max-width: 768px) {
+    .place-here-item {
+      height: 30px;
+      padding-top: 7px;
+      font-size: 12px; } }
+  @media screen and (max-width: 480px) {
+    .place-here-item {
+      height: 25px;
+      padding-top: 5px; } }
+
+footer {
+  padding: 20px 0;
+  background-color: #626B52; }
+
+/*# sourceMappingURL=style.css.map */
